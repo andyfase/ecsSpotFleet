@@ -1,0 +1,43 @@
+#CloudFormation sample template for WordPress.
+#This template uses YAML based syntax.
+AWSTemplateFormatVersion: '2010-09-09'
+Description: 'A quick CF template for starting a ECS cluster based on a Spot Fleet instance with a standard autoscale group as backup
+  Utilizes: ECS, Spot Fleet, ASG, ALB, CloudWatch, SNS and Lambda
+  '
+Parameters:
+  SpotInstanceType#1:
+    AllowedValues:
+      - c4.large
+      - c4.xlarge
+      - c4.2xlarge
+      - m4.large
+      - m4.xlarge
+      - m4.2xlarge
+      ConstraintDescription: must be a valid EC2 instance type.
+      Default: c4.xlarge
+      Description: WebServer EC2 instance type
+      Type: String
+  SpotInstanceType#2:
+    AllowedValues:
+      - c4.large
+      - c4.xlarge
+      - c4.2xlarge
+      - m4.large
+      - m4.xlarge
+      - m4.2xlarge
+      ConstraintDescription: must be a valid EC2 instance type.
+      Default: c4.2xlarge
+      Description: WebServer EC2 instance type
+      Type: String
+  SpotInstanceType#3:
+    AllowedValues:
+      - c4.large
+      - c4.xlarge
+      - c4.2xlarge
+      - m4.large
+      - m4.xlarge
+      - m4.2xlarge
+      ConstraintDescription: must be a valid EC2 instance type.
+      Default: m4.xlarge
+      Description: WebServer EC2 instance type
+      Type: String

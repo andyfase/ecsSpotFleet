@@ -1,0 +1,164 @@
+{
+  "IamFleetRole": "arn:aws:iam::433468561249:role/aws-ec2-spot-fleet-role",
+  "AllocationStrategy": "diversified",
+  "TargetCapacity": 32,
+  "SpotPrice": "0.054",
+  "ValidFrom": "2016-08-29T18:26:11Z",
+  "ValidUntil": "2017-08-29T18:26:11Z",
+  "TerminateInstancesWithExpiration": true,
+  "LaunchSpecifications": [
+    {
+      "ImageId": "ami-2d1bce4d",
+      "InstanceType": "c4.xlarge",
+      "SpotPrice": "0.04725",
+      "KeyName": "Andy AWS",
+      "WeightedCapacity": 4,
+      "Monitoring": {
+        "Enabled": true
+      },
+      "IamInstanceProfile": {
+        "Arn": "arn:aws:iam::433468561249:instance-profile/ecsInstanceRole"
+      },
+      "BlockDeviceMappings": [
+        {
+          "DeviceName": "/dev/xvda",
+          "Ebs": {
+            "DeleteOnTermination": true,
+            "VolumeType": "gp2",
+            "VolumeSize": 8,
+            "SnapshotId": "snap-d17d412a"
+          }
+        },
+        {
+          "DeviceName": "/dev/xvdcz",
+          "Ebs": {
+            "DeleteOnTermination": true,
+            "VolumeType": "gp2",
+            "VolumeSize": 22
+          }
+        }
+      ],
+      "SecurityGroups": [
+        {
+          "GroupId": "sg-1e6b8178"
+        }
+      ],
+      "UserData": "IyEvYmluL2Jhc2gNCmVjaG8gRUNTX0NMVVNURVI9ZWNzLXNwb3QtY2x1c3RlciA+PiAvZXRjL2Vjcy9lY3MuY29uZmln"
+    },
+    {
+      "ImageId": "ami-2d1bce4d",
+      "InstanceType": "c4.2xlarge",
+      "SpotPrice": "0.04725",
+      "KeyName": "Andy AWS",
+      "WeightedCapacity": 8,
+      "Monitoring": {
+        "Enabled": true
+      },
+      "IamInstanceProfile": {
+        "Arn": "arn:aws:iam::433468561249:instance-profile/ecsInstanceRole"
+      },
+      "BlockDeviceMappings": [
+        {
+          "DeviceName": "/dev/xvda",
+          "Ebs": {
+            "DeleteOnTermination": true,
+            "VolumeType": "gp2",
+            "VolumeSize": 8,
+            "SnapshotId": "snap-d17d412a"
+          }
+        },
+        {
+          "DeviceName": "/dev/xvdcz",
+          "Ebs": {
+            "DeleteOnTermination": true,
+            "VolumeType": "gp2",
+            "VolumeSize": 22
+          }
+        }
+      ],
+      "SecurityGroups": [
+        {
+          "GroupId": "sg-1e6b8178"
+        }
+      ],
+      "UserData": "IyEvYmluL2Jhc2gNCmVjaG8gRUNTX0NMVVNURVI9ZWNzLXNwb3QtY2x1c3RlciA+PiAvZXRjL2Vjcy9lY3MuY29uZmln"
+    },
+    {
+      "ImageId": "ami-2d1bce4d",
+      "InstanceType": "m4.xlarge",
+      "SpotPrice": "0.054",
+      "KeyName": "Andy AWS",
+      "WeightedCapacity": 4,
+      "Monitoring": {
+        "Enabled": true
+      },
+      "IamInstanceProfile": {
+        "Arn": "arn:aws:iam::433468561249:instance-profile/ecsInstanceRole"
+      },
+      "BlockDeviceMappings": [
+        {
+          "DeviceName": "/dev/xvda",
+          "Ebs": {
+            "DeleteOnTermination": true,
+            "VolumeType": "gp2",
+            "VolumeSize": 8,
+            "SnapshotId": "snap-d17d412a"
+          }
+        },
+        {
+          "DeviceName": "/dev/xvdcz",
+          "Ebs": {
+            "DeleteOnTermination": true,
+            "VolumeType": "gp2",
+            "VolumeSize": 22
+          }
+        }
+      ],
+      "SecurityGroups": [
+        {
+          "GroupId": "sg-1e6b8178"
+        }
+      ],
+      "UserData": "IyEvYmluL2Jhc2gNCmVjaG8gRUNTX0NMVVNURVI9ZWNzLXNwb3QtY2x1c3RlciA+PiAvZXRjL2Vjcy9lY3MuY29uZmln"
+    },
+    {
+      "ImageId": "ami-2d1bce4d",
+      "InstanceType": "m4.2xlarge",
+      "SpotPrice": "0.054",
+      "KeyName": "Andy AWS",
+      "WeightedCapacity": 8,
+      "Monitoring": {
+        "Enabled": true
+      },
+      "IamInstanceProfile": {
+        "Arn": "arn:aws:iam::433468561249:instance-profile/ecsInstanceRole"
+      },
+      "BlockDeviceMappings": [
+        {
+          "DeviceName": "/dev/xvda",
+          "Ebs": {
+            "DeleteOnTermination": true,
+            "VolumeType": "gp2",
+            "VolumeSize": 8,
+            "SnapshotId": "snap-d17d412a"
+          }
+        },
+        {
+          "DeviceName": "/dev/xvdcz",
+          "Ebs": {
+            "DeleteOnTermination": true,
+            "VolumeType": "gp2",
+            "VolumeSize": 22
+          }
+        }
+      ],
+      "SecurityGroups": [
+        {
+          "GroupId": "sg-1e6b8178"
+        }
+      ],
+      "UserData": "IyEvYmluL2Jhc2gNCmVjaG8gRUNTX0NMVVNURVI9ZWNzLXNwb3QtY2x1c3RlciA+PiAvZXRjL2Vjcy9lY3MuY29uZmln"
+    }
+  ],
+  "Type": "maintain"
+}
