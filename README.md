@@ -48,7 +48,7 @@ CloudWatch| There are a number of metrics from Spot-Fleet and ECS which are then
 
 ## Architecture
 
-![](/wiki/download/attachments/96764925/spotFleet_ECS_architecture.jpg?version=1&modificationDate=1475087938714&api=v2)
+![Architecture Diagram](https://github.com/andyfase/ecsSpotFleet/blob/master/spotFleet_ECS_architecture.jpg "Architecture")
 
 
 
@@ -126,7 +126,7 @@ We use a very simple Lambda function to effectively do 2 things
 
 The Lambda function is written in Python and attached below
 
-![](/wiki/rest/documentConversion/latest/conversion/thumbnail/102236862/1?attachmentId=102236862&version=1&mimeType=application%2Foctet-stream&height=250&thumbnailStatus=200)
+[Lambda Code](https://github.com/andyfase/ecsSpotFleet/blob/master/ecsManageSpotPendingCapacity.py)
 
 The function will need to assume a role which has access to both CloudWatch (to get metrics) and to ASG (to adjust the desiredCapacity), example policies for this are:
     
